@@ -17,7 +17,7 @@ const uint16_t BUTTON_PUSHING_MSEC = 100;
  * @param delay_after_pushing_msec ボタンを押し終えた後の待ち時間 
  * @param loop_num ボタンを押す回数
  */
-void pushButton(Button button, int delay_after_pushing_msec, int loop_num=1)
+void pushButton(Button button, int delay_after_pushing_msec, int loop_num)
 {
     for(int i=0; i<loop_num; i++)
     {
@@ -36,7 +36,7 @@ void pushButton(Button button, int delay_after_pushing_msec, int loop_num=1)
  * @param delay_after_pushing_msec ボタンを押し終えた後の待ち時間 
  * @param loop_num ボタンを押す回数
  */
-void pushHatButton(Hat button, int delay_after_pushing_msec, int loop_num=1)
+void pushHatButton(Hat button, int delay_after_pushing_msec, int loop_num)
 {
     for(int i=0;i<loop_num;i++)
     {

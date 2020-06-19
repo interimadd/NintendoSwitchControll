@@ -28,10 +28,10 @@ void getEggFromBreeder(){
     pushButton(Button::PLUS, 1000);
     tiltJoystick(0, 0, 100, 0, 2000);
     tiltJoystick(30, -100, 0, 0, 2000);
-    pushButton(Button::PLUS, 1000);
     // 育て屋さんから卵をもらう
     pushButton(Button::A, 1000, 4);
     pushButton(Button::B, 500, 10);
+    pushButton(Button::PLUS, 1000);
 }
 
 // 初期位置(ハシノマはらっぱ)からぐるぐる走り回る

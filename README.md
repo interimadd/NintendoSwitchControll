@@ -8,6 +8,7 @@ Leonardoだけで完結しているため、追加の電子部品やはんだ付
 ## 必要なもの
 **ハードウェア**
 - Arduino Leonardo
+    - 出費を抑えるなら互換機の[Arduino Pro Micro](https://amzn.to/3acyrgb)がお勧めです。
 - Arduino LeonardoとSwicthを接続するUSBケーブル
 
 **ソフトウェア**
@@ -27,9 +28,20 @@ leonardo.pid=0x0092
 ※ 複数ある場合は相当する箇所を全て書き換える  
 ※ 見つからない場合はArduino IDEのファイル>スケッチ例>SPIから適当なスケッチを開き、スケッチ>スケッチの場所を開くで開いたディレクトリから遡っていくと、boards.txtがある
 
+![vid](https://user-images.githubusercontent.com/14195687/112593510-f4293f00-8e4a-11eb-82e2-ae1317b5a618.jpg)
+
 ### 入力
 **サンプルスケッチを書き込む**  
-サンプルスケッチを開き、ArduinoをPCに繋いで、Arduino IDE経由で書き込む
+1. Arduino IDEを立ち上げる
+
+2. サンプルスケッチを開く
+スケッチ例→NintendoSwitchControleer→pokeomn
+![sketch](https://user-images.githubusercontent.com/14195687/112593499-effd2180-8e4a-11eb-95f3-06a7202a7fbc.jpg)
+
+3. ArduinoをPCに接続し、ボードをLeonardoに設定。シリアルポートも接続しているポートに変更する。
+![arduino](https://user-images.githubusercontent.com/14195687/112593518-f68b9900-8e4a-11eb-8d68-1ce7df2dfcf2.jpg)
+
+4. 書き込む
 
 **Switchに接続する**  
 SwicthのUSBポートにUSBケーブルを使ってLeonardoを接続する。  
@@ -63,6 +75,7 @@ Switchをドックに刺した状態で、ドックのUSBポートにLeonardoを
 初期条件は以下の通り
 1. 願いのかたまりを投げ入れた巣穴の前にいること
 2. 巣穴のワットは回収済みであること
+3. Switchの本体設定で「インターネットで時間をあわせる」がOFFになっていること
 
 ### 自動レイドバトル(auto_raid_battle.ino)
 レイドバトル→ポケモンを捕獲→ボックスに預ける→願いの塊を投げ入れるを繰り返すスケッチ

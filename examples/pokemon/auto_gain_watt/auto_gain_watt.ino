@@ -15,7 +15,7 @@ void execWattGainSequence()
     // ホーム画面 > 設定
     pushButton(Button::HOME, 1000);
     pushHatButton(Hat::DOWN, 100);
-    pushHatButton(Hat::RIGHT, 100, 4);
+    pushHatButton(Hat::RIGHT, 100, 5);
     pushButton(Button::A, 1000);
     // 設定 > 本体 > 日付と時刻
     pushHatButtonContinuous(Hat::DOWN, 2000);

@@ -22,7 +22,7 @@ void ID()
   // ホーム画面 > 設定
   pushButton(Button::HOME, 500);
   pushHatButton(Hat::DOWN, 40);
-  pushHatButton(Hat::RIGHT, 30, 4);
+  pushHatButton(Hat::RIGHT, 30, 5);
   pushButton(Button::A, 300);
   // 設定 > 本体 > 日付と時刻
   pushHatButtonContinuous(Hat::DOWN, 2000);

@@ -4,6 +4,7 @@
 * 初期条件は以下の通り
 * 1. 願いのかたまりを投げ入れた巣穴の前にいること
 * 2. 巣穴のワットは回収済みであること
+* 3. Switchの本体設定で「インターネットで時間をあわせる」がOFFになっていること
 */
 #include <auto_command_util.h>
 
@@ -15,7 +16,7 @@ void execWattGainSequence()
     // ホーム画面 > 設定
     pushButton(Button::HOME, 1000);
     pushHatButton(Hat::DOWN, 100);
-    pushHatButton(Hat::RIGHT, 100, 4);
+    pushHatButton(Hat::RIGHT, 100, 5);
     pushButton(Button::A, 1000);
     // 設定 > 本体 > 日付と時刻
     pushHatButtonContinuous(Hat::DOWN, 2000);

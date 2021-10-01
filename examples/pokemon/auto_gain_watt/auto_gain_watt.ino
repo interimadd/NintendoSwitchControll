@@ -8,24 +8,22 @@
 */
 #include <auto_command_util.h>
 
-// ワットを回収するシーケンス
-void execWattGainSequence()
+void changeDateSequence()
 {
-    // 募集開始
-    pushButton(Button::A, 3000);
     // ホーム画面 > 設定
-    pushButton(Button::HOME, 1000);
-    pushHatButton(Hat::DOWN, 100);
-    pushHatButton(Hat::RIGHT, 100, 5);
-    pushButton(Button::A, 1000);
+    pushButton(Button::HOME, 500);
+    pushHatButton(Hat::DOWN, 40);
+    pushHatButton(Hat::RIGHT, 30, 5);
+    pushButton(Button::A, 300);
     // 設定 > 本体 > 日付と時刻
     pushHatButtonContinuous(Hat::DOWN, 2000);
-    pushHatButton(Hat::RIGHT, 100);
-    pushHatButton(Hat::DOWN, 100, 4);
+    pushHatButton(Hat::RIGHT, 500);
+    pushHatButtonContinuous(Hat::DOWN, 700);
     pushButton(Button::A, 500);
     // 日付と時刻 > 現在の日付と時刻
-    pushHatButton(Hat::DOWN, 100, 2);
+    pushHatButton(Hat::DOWN, 20, 2);
     pushButton(Button::A, 500);
+    // 日付更新
     pushHatButton(Hat::RIGHT, 100, 2);
     pushHatButton(Hat::UP, 100);
     pushHatButtonContinuous(Hat::RIGHT, 1000);
@@ -33,6 +31,15 @@ void execWattGainSequence()
     // ホーム画面 > ゲーム画面
     pushButton(Button::HOME, 1000);
     pushButton(Button::A, 500);
+}
+
+// ワットを回収するシーケンス
+void execWattGainSequence()
+{
+    // 募集開始
+    pushButton(Button::A, 3000);
+    // 日付変更
+    changeDateSequence();
     // レイド募集中止
     pushButton(Button::B, 1000);
     pushButton(Button::A, 4000);

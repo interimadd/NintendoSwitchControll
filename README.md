@@ -92,3 +92,6 @@ Switchをドックに刺した状態で、ドックのUSBポートにLeonardoを
 ## 参考
 [【ポケモン剣盾】全自動で卵を孵化させる装置](https://www.youtube.com/watch?v=oXnQt_Mbyzk)  
 [Arduinoでポケモン剣盾自動化してみた ~自動ワット稼ぎ編~](https://qiita.com/sobassy/items/cb707e50f2f27a851886)
+
+# Lisence
+このプロジェクトのライセンスはMITライセンスです。詳細はLICENSE.txtをご覧ください。
